@@ -1,0 +1,24 @@
+#version 330
+
+in vec4 vVertex;
+in vec3 vNormal;
+
+uniform mat4 mvpMatrix;
+uniform mat4 mvMatrix;
+uniform mat3 normalMatrix;
+uniform mat4 invertCamera;
+
+varying vec3 vVaryingTexCoords;
+
+void main()
+{
+	vec3 vEyeNormal = normalMatrix * vNormal;
+	vec4 vPosition4 = mvMatrix * vVertex;
+	vec3 vPosition3 = vPosition4.xyz/vPosition4.w;
+
+	vec4 coords = vec4(reflect(normalize(vPosition3),vEyeNormal),1.0);
+
+	vec4 invertVertex = invertCamera * vVertex;
+	vVaryingTexCoords = normalize(invertVertex.xyz);
+	gl_Position = mvpMatrix * vVertex;
+}
