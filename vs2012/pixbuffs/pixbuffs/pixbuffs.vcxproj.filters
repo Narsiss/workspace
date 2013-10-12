@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="shader">
+      <UniqueIdentifier>{46e8fa3d-6a3c-4db0-bb84-7d2602936e2a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -32,5 +35,17 @@
     <ClCompile Include="pixbuffs.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\Users\solo\Desktop\workspace\vs2012\freeglut_static.lib" />
+    <Library Include="..\..\..\Users\solo\Desktop\workspace\vs2012\gltools.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="blur.vs">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="blur.fs">
+      <Filter>shader</Filter>
+    </None>
   </ItemGroup>
 </Project>
