@@ -1,0 +1,13 @@
+#version 130
+in vec4 vertex;
+
+in vec4 color;
+
+flat out vec4 vFlatColor;
+
+void main(void)
+{
+	vFlatColor = color;
+
+	gl_Position = vertex;
+}
