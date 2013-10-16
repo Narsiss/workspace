@@ -37,15 +37,15 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="..\..\..\Users\solo\Desktop\workspace\vs2012\freeglut_static.lib" />
-    <Library Include="..\..\..\Users\solo\Desktop\workspace\vs2012\gltools.lib" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="blur.vs">
       <Filter>shader</Filter>
     </None>
     <None Include="blur.fs">
       <Filter>shader</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\freeglut_static.lib" />
+    <Library Include="..\..\gltools.lib" />
   </ItemGroup>
 </Project>

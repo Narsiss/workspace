@@ -90,12 +90,12 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="..\..\..\Users\solo\Desktop\workspace\vs2012\freeglut_static.lib" />
-    <Library Include="..\..\..\Users\solo\Desktop\workspace\vs2012\gltools.lib" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="blur.fs" />
     <None Include="blur.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\freeglut_static.lib" />
+    <Library Include="..\..\gltools.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

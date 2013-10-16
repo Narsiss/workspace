@@ -1,12 +1,14 @@
 #version 150
 
 in vec2 vTexCoord;
-uniform sample2D textureUnit0;
-uniform sample2D textureUnit1;
-uniform sample2D textureUnit2;
-uniform sample2D textureUnit3;
-uniform sample2D textureUnit4;
-uniform sample2D textureUnit5;
+uniform sampler2D textureUnit0;
+uniform sampler2D textureUnit1;
+uniform sampler2D textureUnit2;
+uniform sampler2D textureUnit3;
+uniform sampler2D textureUnit4;
+uniform sampler2D textureUnit5;
+
+//varying bool isUseColor;
 
 void main()
 {
@@ -18,5 +20,8 @@ void main()
     vec4 blur5 = texture(textureUnit5,vTexCoord);
     
     vec4 blur = blur0 + blur1 + blur2 + blur3 + blur4 + blur5;
-    gl_FragColor = blur/6;
+    blur = blur/6;
+    float grey = dot(blur.rgb,vec3(0.299,0.587,0.114));
+
+    gl_FragColor = grey;
 }
