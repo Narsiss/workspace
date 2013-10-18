@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fbodrawbuffers", "fbodrawbuffers\fbodrawbuffers.vcxproj", "{971FF98A-C3BA-4D9A-9DB2-39DA1F956E67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{971FF98A-C3BA-4D9A-9DB2-39DA1F956E67}.Debug|Win32.ActiveCfg = Debug|Win32
+		{971FF98A-C3BA-4D9A-9DB2-39DA1F956E67}.Debug|Win32.Build.0 = Debug|Win32
+		{971FF98A-C3BA-4D9A-9DB2-39DA1F956E67}.Release|Win32.ActiveCfg = Release|Win32
+		{971FF98A-C3BA-4D9A-9DB2-39DA1F956E67}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
